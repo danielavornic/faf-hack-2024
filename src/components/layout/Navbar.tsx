@@ -9,8 +9,9 @@ export const Navbar = () => {
   const isHoe = router.pathname === "/";
   return (
     <div
-      className={clsx("relative z-[1] w-full border-b border-white border-opacity-30 text-white", {
-        "bg-black": !isHoe
+      className={clsx("relative z-[1] w-full border-b border-opacity-30 text-white", {
+        "bg-brand-900": !isHoe,
+        "border-white": isHoe
       })}
     >
       <Container maxW="8xl" py={6} className="flex items-center justify-between py-2">

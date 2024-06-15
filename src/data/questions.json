@@ -1,0 +1,295 @@
+[
+  {
+    "question": "What device are you looking for?",
+    "type": "radio",
+    "name": "deviceType",
+    "options": [
+      {
+        "label": "Smartphone",
+        "value": "smartphone",
+        "icon": "/images/ac.svg",
+        "hasImage": true
+      },
+      {
+        "label": "Tablet",
+        "value": "tablet",
+        "icon": "/images/ac.svg",
+        "hasImage": true
+      },
+      {
+        "label": "Computer",
+        "value": "computer",
+        "icon": "/images/ac.svg",
+        "hasImage": true
+      },
+      {
+        "label": "Smart Watch",
+        "value": "smart_watch",
+        "icon": "/images/ac.svg",
+        "hasImage": true
+      },
+      {
+        "label": "Audio Accessory",
+        "value": "audio_accessory",
+        "icon": "/images/ac.svg",
+        "hasImage": true
+      }
+    ]
+  },
+  {
+    "question": "What do you mainly use your phone for?",
+    "type": "checkbox",
+    "name": "purpose",
+    "options": [
+      {
+        "label": "Calling and texting",
+        "value": "calling_texting"
+      },
+      {
+        "label": "Photography and videos",
+        "value": "photography_videos"
+      },
+      {
+        "label": "Gaming",
+        "value": "gaming"
+      },
+      {
+        "label": "Social media and communication",
+        "value": "social_media"
+      },
+      {
+        "label": "Business and productivity",
+        "value": "business_productivity"
+      }
+    ]
+  },
+  {
+    "question": "What is your budget for a new smartphone?",
+    "type": "checkbox",
+    "name": "price",
+    "options": [
+      {
+        "label": "Less than $200",
+        "value": "under_200"
+      },
+      {
+        "label": "$200 to $400",
+        "value": "200_400"
+      },
+      {
+        "label": "$400 to $600",
+        "value": "400_600"
+      },
+      {
+        "label": "$600 to $800",
+        "value": "600_800"
+      },
+      {
+        "label": "$800 and above",
+        "value": "800_plus"
+      }
+    ]
+  },
+  {
+    "question": "How important is it for your phone to be easy to use?",
+    "type": "radio",
+    "name": "easeOfUse",
+    "options": [
+      {
+        "label": "Very important",
+        "value": "very_important"
+      },
+      {
+        "label": "Somewhat important",
+        "value": "somewhat_important"
+      },
+      {
+        "label": "Not important",
+        "value": "not_important"
+      }
+    ]
+  },
+  {
+    "question": "Do you prefer a phone that is easy to hold in one hand or do you not mind a larger phone?",
+    "type": "radio",
+    "name": "physicalSize",
+    "options": [
+      {
+        "label": "Easy to hold in one hand",
+        "value": "easy_to_hold"
+      },
+      {
+        "label": "I don't mind a larger phone",
+        "value": "larger_phone"
+      }
+    ]
+  },
+  {
+    "question": "How often do you want to charge your phone?",
+    "type": "radio",
+    "name": "batteryLife",
+    "options": [
+      {
+        "label": "Charge daily",
+        "value": "daily"
+      },
+      {
+        "label": "Charge every few days",
+        "value": "few_days"
+      },
+      {
+        "label": "Charge as rarely as possible",
+        "value": "rarely"
+      }
+    ]
+  },
+  {
+    "question": "What do you mainly need space for on your phone (photos, apps, videos)?",
+    "type": "checkbox",
+    "name": "storageNeeds",
+    "options": [
+      {
+        "label": "Photos",
+        "value": "photos"
+      },
+      {
+        "label": "Apps",
+        "value": "apps"
+      },
+      {
+        "label": "Videos",
+        "value": "videos"
+      },
+      {
+        "label": "All of the above",
+        "value": "all_above"
+      }
+    ]
+  },
+  {
+    "question": "How important is it that your phone is durable or water-resistant?",
+    "type": "radio",
+    "name": "durability",
+    "options": [
+      {
+        "label": "Very important",
+        "value": "very_important"
+      },
+      {
+        "label": "Somewhat important",
+        "value": "somewhat_important"
+      },
+      {
+        "label": "Not important",
+        "value": "not_important"
+      }
+    ]
+  },
+  {
+    "question": "Do you often take photos or videos with your phone?",
+    "type": "radio",
+    "name": "cameraUse",
+    "options": [
+      {
+        "label": "Often",
+        "value": "often"
+      },
+      {
+        "label": "Sometimes",
+        "value": "sometimes"
+      },
+      {
+        "label": "Rarely",
+        "value": "rarely"
+      }
+    ]
+  },
+  {
+    "question": "Do you use your phone to listen to music or watch videos?",
+    "type": "radio",
+    "name": "soundQuality",
+    "options": [
+      {
+        "label": "Often",
+        "value": "often"
+      },
+      {
+        "label": "Sometimes",
+        "value": "sometimes"
+      },
+      {
+        "label": "Rarely",
+        "value": "rarely"
+      }
+    ]
+  },
+  {
+    "question": "Do you often use your phone to connect to the internet or WiFi?",
+    "type": "radio",
+    "name": "connectivity",
+    "options": [
+      {
+        "label": "Often",
+        "value": "often"
+      },
+      {
+        "label": "Sometimes",
+        "value": "sometimes"
+      },
+      {
+        "label": "Rarely",
+        "value": "rarely"
+      }
+    ]
+  },
+  {
+    "question": "Is there a particular phone brand you trust or prefer?",
+    "type": "checkbox",
+    "name": "brandPreference",
+    "options": [
+      {
+        "label": "No preference",
+        "value": "any"
+      },
+      {
+        "label": "Apple",
+        "value": "apple"
+      },
+      {
+        "label": "Samsung",
+        "value": "samsung"
+      },
+      {
+        "label": "Google",
+        "value": "google"
+      },
+      {
+        "label": "Huawei",
+        "value": "huawei"
+      },
+      {
+        "label": "Other",
+        "value": "other"
+      }
+    ]
+  },
+  {
+    "question": "How important is it to have good customer service and support for your phone?",
+    "type": "radio",
+    "name": "supportService",
+    "options": [
+      {
+        "label": "Very important",
+        "value": "very_important"
+      },
+      {
+        "label": "Somewhat important",
+        "value": "somewhat_important"
+      },
+      {
+        "label": "Not important",
+        "value": "not_important"
+      }
+    ]
+  }
+]

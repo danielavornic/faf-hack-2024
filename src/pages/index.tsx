@@ -20,7 +20,7 @@ export default function Home() {
         {/* <Heading as="h1" size="4xl" color="white" textAlign="center" pb={6} fontWeight={900}>
           Hello World
         </Heading> */}
-        <Heading as="h1" size="3xl" color="white" textAlign="center" pb={6} fontWeight={900}>
+        <Heading as="h1" size="3xl" color="white" textAlign="center" pb={6}>
           <TypeAnimation
             preRenderFirstString={true}
             sequence={[
@@ -73,7 +73,7 @@ export default function Home() {
             <span className="text-lg font-semibold text-gray-200">or</span>
             <hr className="border-1 w-1/4 bg-gray-600 opacity-50" />
           </div>
-          <Link href="/survery">
+          <Link href="/survey">
             <Button
               colorScheme="brand"
               ml={2}

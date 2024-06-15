@@ -5,6 +5,7 @@ import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@fontsource/merriweather";
 import "@fontsource-variable/roboto-slab";
+import "@fontsource/poppins";
 
 const queryClient = new QueryClient();
 
@@ -24,7 +25,7 @@ const theme = extendTheme({
     }
   },
   fonts: {
-    heading: `'Roboto Slab Variable', serif`,
+    heading: `'Poppins', serif`,
     body: `'Inter', sans-serif`
   }
 });
