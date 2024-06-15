@@ -1,10 +1,20 @@
-import { useRouter } from 'next/router';
-import React from 'react';
-import glossaryTerms from '@/data/terms.json';
-import glossaryByLetter from '@/data/glossaryTerms.json';
-import { Box, Heading, Image, Text, Stack, List, ListItem, Flex, Container } from '@chakra-ui/react';
+import { useRouter } from "next/router";
+import React from "react";
+import glossaryTerms from "@/data/terms.json";
+import glossaryByLetter from "@/data/glossaryTerms.json";
+import {
+  Box,
+  Heading,
+  Image,
+  Text,
+  Stack,
+  List,
+  ListItem,
+  Flex,
+  Container
+} from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
-import { Layout } from '@/components';
+import { Layout, PageHeader } from "@/components";
 
 type GlossaryTermsType = {
   [key: string]: string[];
@@ -15,7 +25,7 @@ const TermPage = () => {
   const { slug } = router.query;
 
   // Ensure slug is a string and exists in glossaryTerms
-  if (typeof slug !== 'string' || !(slug in glossaryTerms)) {
+  if (typeof slug !== "string" || !(slug in glossaryTerms)) {
     return <div>Term not found</div>;
   }
 
@@ -26,40 +36,46 @@ const TermPage = () => {
   return (
     <Layout title="Glossary" className="bg-[#fbfaff]">
       {/* Header */}
-			<Box as="header" p={4} textAlign="center">
-				<Heading as="h1" color="brand.900">Glossary</Heading>
-			</Box>
-			<Container maxW="8xl" py={6} className="flex items-center justify-between py-2" ml={4}>
+      <PageHeader
+        title="Glossary"
+        subtitle="Learn more about common terms used in the tech industry."
+      />
+      <Container maxW="8xl" py={6} className="flex items-center justify-between py-2">
         <Flex>
           {/* Left Section: Glossary List */}
           <Box
             flex="1"
             p={4}
             maxW="26%"
-            maxH="80vh"
             overflowY="auto"
-            overflowX="hidden"
-            className="custom-scrollbar"
-            borderRadius="md" // Rounded corners
+            // className="custom-scrollbar sticky top-[185px]"
+            borderRadius="12px" // Rounded corners
             borderWidth="1px"
             borderColor="gray.300"
-						backgroundColor="white"
+            backgroundColor="white"
           >
-            <Stack spacing={4}>
-              {Object.keys(glossaryByLetter).map((letter) => (
+            <Stack
+              spacing={4}
+              maxH="75vh"
+              className="custom-scrollbar overflow-y-auto"
+              overflowX="hidden"
+            >
+              {Object.keys(glossaryByLetter).map((letter) =>
                 !selectedTerm || selectedTerm === letter ? (
                   <Box key={letter}>
-                    <Heading as="h2" size="md" mb={2} color="brand.700">{letter}</Heading>
+                    <Heading as="h2" size="md" mb={2} color="brand.700">
+                      {letter}
+                    </Heading>
                     <List justifyContent="center" alignItems="center">
-                      {glossaryByLetter[letter].map((term) => (
+                      {glossaryByLetter[letter as any].map((term) => (
                         <ListItem key={term}>
-                          <Link 
-                            href={`/glossary/${encodeURIComponent(term)}`} 
+                          <Link
+                            href={`/glossary/${encodeURIComponent(term)}`}
                             borderRadius="md"
                             margin="0 8px"
                             padding="4px 6px"
-                            _hover={{ 
-                              background: "#ccc1f4",
+                            _hover={{
+                              background: "#ccc1f4"
                             }}
                             textAlign="center" // Center align the link content
                             whiteSpace="nowrap" // Prevent wrapping of long terms
@@ -72,27 +88,22 @@ const TermPage = () => {
                     </List>
                   </Box>
                 ) : null
-              ))}
+              )}
             </Stack>
           </Box>
 
           {/* Right Section: Selected Term Details */}
-          <Box
-            flex="1"
-            p={4}
-            mr="4"
-            borderRadius="md" // Rounded corners
-            borderWidth="1px"
-            borderColor="gray.200"
-          >
+          <Flex flexDir="column" alignItems="center" flex="1" pl={8} mr="4">
             <Heading as="h1" mb={4} textAlign="center" color="brand.900">
               {slug}
             </Heading>
-            <Box maxW="400px" mx="auto" mb={4}>
-              <Image src={termInfo.image} alt={`${slug} image`} />
-            </Box>
+            <div
+              className="mb-8 h-[380px] w-full rounded-[12px] border border-gray-300 bg-cover bg-center"
+              style={{ backgroundImage: `url(${termInfo.image})` }}
+            />
+            {/* <Image src={termInfo.image} alt={`${slug} image`} /> */}
             <Text textAlign="justify">{termInfo.explanation}</Text>
-          </Box>
+          </Flex>
         </Flex>
       </Container>
     </Layout>

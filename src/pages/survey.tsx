@@ -1,4 +1,4 @@
-import { CardRadio, CardRadioOption, Layout } from "@/components";
+import { CardRadio, CardRadioOption, Layout, PageHeader } from "@/components";
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import clsx from "clsx";
 import { ArrowLeft } from "lucide-react";
@@ -86,29 +86,11 @@ const survey = () => {
 
   return (
     <Layout title="Survey" className="bg-[#fbfaff]" hideFooter>
-      <form
-        className="overflow-y-auto border border-b border-gray-100 bg-white py-5"
-        onSubmit={handleSubmit(onSubmit)}
-        id="survey-form"
-      >
-        <Container maxW="8xl" overflowY="visible">
-          <Flex gap={5}>
-            <button
-              className="bg-brand-50 hover:bg-brand-100 flex h-10 w-10 items-center justify-center rounded-full"
-              onClick={() => router.back()}
-            >
-              <ArrowLeft size={20} className="text-brand-500" />
-            </button>
-            <div className="space-y-1">
-              <Heading as="h1" className="!text-2xl !leading-[1]" fontWeight={600}>
-                Survey
-              </Heading>
-              <p className="text-[14px] !leading-tight text-gray-500">
-                Take our survey to find the best product for you.
-              </p>
-            </div>
-          </Flex>
-        </Container>
+      <form className="overflow-y-auto bg-white" onSubmit={handleSubmit(onSubmit)} id="survey-form">
+        <PageHeader
+          title="Survey"
+          subtitle="Answer the following questions to help us recommend the best products for you."
+        />
       </form>
       <Container maxW="8xl" pt={4} pb="100px">
         <div className="flex w-full justify-center space-x-4">
