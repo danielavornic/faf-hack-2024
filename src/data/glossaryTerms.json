@@ -1,0 +1,150 @@
+{
+    "0-9": [
+      "3.5mm audio jack",
+      "360° panorama mode",
+      "3D facial recognition",
+      "5G support"
+    ],
+    "A": [
+      "Accelerometer",
+      "Active noise cancellation (ANC)",
+      "AF tracking",
+      "AirPlay",
+      "ANT+"
+    ],
+    "B": [
+      "Barometer",
+      "Battery life (CIPA)",
+      "Battery power",
+      "Bluetooth version",
+      "Body SAR (US)",
+      "Brightness (typical)",
+      "BSI sensor",
+      "Burst mode"
+    ],
+    "C": [
+      "CMOS sensor",
+      "Compass",
+      "Continuous autofocus for movies",
+      "Contrast ratio",
+      "CPU speed",
+      "CPU threads"
+    ],
+    "D": [
+      "Damage-resistant glass",
+      "DLNA certification",
+      "Download speed",
+      "Dual-lens (or multi-lens) main camera",
+      "Dual-tone LED flash",
+      "Dust- and water-resistance",
+      "DxOMark Mobile score"
+    ],
+    "E": [
+      "E-paper display",
+      "External memory slot"
+    ],
+    "F": [
+      "Fast charging",
+      "Fingerprint scanner",
+      "Floating-point performance"
+    ],
+    "G": [
+      "Geekbench result",
+      "GPS",
+      "GPU clock speed",
+      "Gyroscope"
+    ],
+    "H": [
+      "HDR mode",
+      "Heart rate monitor",
+      "Highest frequency"
+    ],
+    "I": [
+      "Impedance",
+      "Ingress Protection (IP) rating",
+      "Internal storage",
+      "Iris scanner"
+    ],
+    "J": [
+      "Jog wheels"
+    ],
+    "K": [
+      "Keyless chuck"
+    ],
+    "L": [
+      "Lowest frequency"
+    ],
+    "M": [
+      "Manual exposure",
+      "Manual focus",
+      "Manual ISO",
+      "Manual white balance",
+      "Maximum ISO",
+      "Megapixels (main camera)",
+      "Memory bandwidth"
+    ],
+    "N": [
+      "NFC"
+    ],
+    "O": [
+      "Optical image stabilization (OIS)",
+      "Optical zoom"
+    ],
+    "P": [
+      "Phase-detection autofocus (PDAF) for photos",
+      "Physical QWERTY keyboard",
+      "Pixel density",
+      "Pixel rate",
+      "Pixel size (main camera)"
+    ],
+    "R": [
+      "Radio",
+      "RAM",
+      "RAM speed",
+      "RAW image format support",
+      "Ray tracing",
+      "Refresh rate",
+      "Removable battery",
+      "Resolution"
+    ],
+    "S": [
+      "Screen size",
+      "Semiconductor size",
+      "Sensor size",
+      "Shading units",
+      "Silent alarm",
+      "Sleep tracking",
+      "Slow-motion video recording",
+      "Sound pressure level",
+      "Stereo speakers",
+      "Subwoofer"
+    ],
+    "T": [
+      "Texture rate",
+      "Thermal Design Power (TDP)",
+      "Timelapse video"
+    ],
+    "U": [
+      "Ultra power-saving mode",
+      "Upload speed",
+      "USB Type-C",
+      "USB version"
+    ],
+    "V": [
+      "Video recording (main camera)",
+      "Voice commands"
+    ],
+    "W": [
+      "Weather-sealed (splashproof)",
+      "Wi-Fi 5 (802.11ac) connectivity",
+      "Wi-Fi 6 (802.11ax) connectivity",
+      "Wide aperture (main camera)",
+      "Wireless charging"
+    ],
+    "Y": [
+      "Youth unemployment rate"
+    ],
+    "Z": [
+      "Zoom capability"
+    ]
+  }
