@@ -5,3 +5,23 @@
 html, body {
   @apply overflow-x-hidden;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #ccc1f4;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #211968;
+  border-radius: 10px;
+  border: 2px solid #211968;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #110f40;
+  border-radius: 10px;
+  border: 2px solid #110f40;
+}  
