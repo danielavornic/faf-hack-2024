@@ -3,6 +3,8 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import "@fontsource/merriweather";
+import "@fontsource-variable/roboto-slab";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,10 @@ const theme = extendTheme({
       800: "#110f40",
       900: "#04031b"
     }
+  },
+  fonts: {
+    heading: `'Roboto Slab Variable', serif`,
+    body: `'Inter', sans-serif`
   }
 });
 
