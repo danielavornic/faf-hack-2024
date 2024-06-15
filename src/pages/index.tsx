@@ -15,6 +15,7 @@ import {
   Text,
   useDisclosure
 } from "@chakra-ui/react";
+
 import { Link } from "@chakra-ui/next-js";
 import { useQuery } from "@tanstack/react-query";
 import { Spinner } from "@chakra-ui/react";
@@ -42,9 +43,9 @@ export default function Home() {
           <Button colorScheme="brand" onClick={onOpen}>
             Click me
           </Button>
-          <Link href="/maria">
+          <Link href="/glossary">
             <Button colorScheme="brand" variant="outline">
-              Go to Maria
+              Glossary
             </Button>
           </Link>
         </Flex>

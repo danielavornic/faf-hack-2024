@@ -1,0 +1,560 @@
+{
+  "3.5mm audio jack": [
+    {
+      "image": "https://ventiontech.com/cdn/shop/products/vention--jack-3-5-aux-cable-male-to-male-3-5-mm-jack-hifi-audio-cable-for-guitar-car-microphone-headphone-speaker-cable-aux-cord-34770852577446_600x600_crop_center.png?v=1681473950",
+      "explanation": "The 3.5mm headphone jack is an industry standard audio plug. Most commonly used for connecting a pair of stereo headphones to your smartphone or 'piping' your audio from your phone to an external amp either in your home or your car. Dependent on the number of connector rings, headphones can also include a microphone."
+    }
+  ],
+  "360° panorama mode": [
+    {
+    "image": "https://d2kbvjszk9d5ln.cloudfront.net/yshop/upload/pic/03-20220922062808996.jpg",
+    "explanation": "360° panorama mode allows you to capture a seamless panoramic view in all directions, providing an immersive experience."
+    }
+  ],
+  "3D facial recognition": [
+    {
+      "image": "https://cdn.inavateonthenet.net/images/facial-recognition.jpg",
+      "explanation": "3D facial recognition technology uses depth mapping to create a 3D model of a user's face for secure authentication and unlocking devices."
+    }
+  ],
+  "5G support": [
+    {
+      "image": "https://telecomtalk.info/wp-content/uploads/2022/10/when-will-indias-5g-network-support-your.jpeg.webp",
+      "explanation": "5G support enables faster data speeds, lower latency, and enhanced network capacity compared to previous generations of mobile networks."
+    }
+  ],
+  "Accelerometer": [
+    {
+      "image": "https://m.media-amazon.com/images/I/61wKbg+UBSL._AC_UF1000,1000_QL80_.jpg",
+      "explanation": "An accelerometer measures acceleration forces, allowing devices to detect orientation changes, screen rotations, and movement."
+    }
+  ],
+  "Active noise cancellation (ANC)": [
+    {
+      "image": "https://wearandhear.com/wp-content/uploads/2021/04/anc.png",
+      "explanation": "Active noise cancellation technology uses microphones to detect ambient noise and generates sound waves that cancel out the noise, providing a quieter listening experience."
+    }
+  ],
+  "AF tracking": [
+    {
+      "image": "https://nps.nikonimaging.com/technical_info/technical_solutions/z7_z6_tips/subject-tracking_af/img/img_01.jpg?v=523a0ffad46ddc8f612d",
+      "explanation": "Auto-focus tracking (AF tracking) continuously adjusts focus on a moving subject, ensuring sharp and clear images or video."
+    }
+  ],
+  "AirPlay": [
+    {
+      "image": "https://i.insider.com/6099a48eba78eb001906e82d?width=1136&format=jpeg",
+      "explanation": "AirPlay is a proprietary protocol developed by Apple that allows wireless streaming of audio, video, and photos between Apple devices and compatible speakers or displays."
+    }
+  ],
+  "ANT+": [
+    {
+      "image": "https://play-lh.googleusercontent.com/Yi8niAEip0BaBdZYvA6V6704_k4cPOWd6IGOAqndG0LMm_wdl-GuefM3De9KlJ13DFU=w526-h296-rw",
+      "explanation": "ANT+ is a wireless protocol for monitoring sensor data such as heart rate, temperature, and power output, widely used in fitness and health monitoring devices."
+    }
+  ],
+  "Barometer": [
+    {
+      "image": "https://example.com/barometer.jpg",
+      "explanation": "A barometer measures atmospheric pressure, providing information about weather changes and altitude in devices like smartphones and smartwatches."
+    }
+  ],
+  "Battery life (CIPA)": [
+    {
+      "image": "https://example.com/battery_life.jpg",
+      "explanation": "Battery life (CIPA) is a standardized measurement of how long a device's battery can last based on the Camera & Imaging Products Association (CIPA) standards."
+    }
+  ],
+  "Battery power": [
+    {
+      "image": "https://example.com/battery_power.jpg",
+      "explanation": "Battery power refers to the capacity of a device's battery, typically measured in milliampere-hours (mAh), indicating how much charge it can store."
+    }
+  ],
+  "Bluetooth version": [
+    {
+      "image": "https://example.com/bluetooth.jpg",
+      "explanation": "Bluetooth version refers to the generation and capabilities of Bluetooth technology, used for wireless communication between devices over short distances."
+    }
+  ],
+  "Body SAR (US)": [
+    {
+      "image": "https://example.com/body_sar.jpg",
+      "explanation": "Specific Absorption Rate (SAR) measures the rate at which energy is absorbed by the body when exposed to a radio frequency electromagnetic field, regulated for safety."
+    }
+  ],
+  "Brightness (typical)": [
+    {
+      "image": "https://example.com/brightness.jpg",
+      "explanation": "Brightness (typical) measures the luminance of a display screen, usually specified in nits, indicating how bright the screen can get under normal operating conditions."
+    }
+  ],
+  "BSI sensor": [
+    {
+      "image": "https://example.com/bsi_sensor.jpg",
+      "explanation": "Backside Illumination (BSI) sensor improves low-light performance in cameras by placing the wiring behind the photodiode, allowing more light to reach the sensor."
+    }
+  ],
+  "Burst mode": [
+    {
+      "image": "https://example.com/burst_mode.jpg",
+      "explanation": "Burst mode allows a camera to capture a series of images in rapid succession, useful for capturing fast-moving subjects or creating action sequences."
+    }
+  ],
+  "CMOS sensor": [
+    {
+      "image": "https://example.com/cmos_sensor.jpg",
+      "explanation": "Complementary Metal-Oxide Semiconductor (CMOS) sensor is a type of image sensor used in digital cameras and smartphones to capture and process light."
+    }
+  ],
+  "Compass": [
+    {
+      "image": "https://example.com/compass.jpg",
+      "explanation": "A compass sensor detects magnetic fields and provides directional information, commonly used in navigation apps and devices."
+    }
+  ],
+  "Continuous autofocus for movies": [
+    {
+      "image": "https://example.com/continuous_af.jpg",
+      "explanation": "Continuous autofocus for movies maintains focus on moving subjects while recording video, ensuring sharp and clear footage."
+    }
+  ],
+  "Contrast ratio": [
+    {
+      "image": "https://example.com/contrast_ratio.jpg",
+      "explanation": "Contrast ratio measures the difference between the brightest and darkest parts of an image displayed on a screen, indicating the image's clarity and depth."
+    }
+  ],
+  "CPU speed": [
+    {
+      "image": "https://example.com/cpu_speed.jpg",
+      "explanation": "CPU speed refers to the clock rate at which a processor executes instructions per second, determining the performance and speed of a device."
+    }
+  ],
+  "CPU threads": [
+    {
+      "image": "https://example.com/cpu_threads.jpg",
+      "explanation": "CPU threads refer to the number of independent processing units within a CPU core, allowing it to execute multiple tasks simultaneously and improve performance."
+    }
+  ],
+  "Damage-resistant glass": [
+    {
+      "image": "https://example.com/damage_resistant_glass.jpg",
+      "explanation": "Damage-resistant glass, such as Corning Gorilla Glass, is designed to withstand scratches, impacts, and drops, providing durability for device screens."
+    }
+  ],
+  "DLNA certification": [
+    {
+      "image": "https://example.com/dlna_certification.jpg",
+      "explanation": "DLNA certification ensures compatibility for wirelessly streaming media between DLNA-certified devices like TVs, speakers, and mobile devices."
+    }
+  ],
+  "Download speed": [
+    {
+      "image": "https://example.com/download_speed.jpg",
+      "explanation": "Download speed measures the rate at which data is transferred from the internet to a device, indicating how quickly files can be downloaded."
+    }
+  ],
+  "Dual-lens (or multi-lens) main camera": [
+    {
+      "image": "https://example.com/dual_lens_camera.jpg",
+      "explanation": "Dual-lens or multi-lens main camera systems use multiple lenses to capture different types of shots, such as wide-angle and telephoto, improving versatility and image quality."
+    }
+  ],
+  "Dual-tone LED flash": [
+    {
+      "image": "https://example.com/dual_tone_flash.jpg",
+      "explanation": "Dual-tone LED flash uses two different colored LEDs to provide more natural and balanced lighting for photos taken in low-light conditions."
+    }
+  ],
+  "Dust- and water-resistance": [
+    {
+      "image": "https://example.com/dust_water_resistance.jpg",
+      "explanation": "Dust- and water-resistance ratings indicate a device's ability to withstand dust particles and water immersion to a specified depth, protecting it from environmental hazards."
+    }
+  ],
+  "DxOMark Mobile score": [
+    {
+      "image": "https://example.com/dxomark_score.jpg",
+      "explanation": "DxOMark Mobile score is a benchmark for evaluating and comparing the image quality and performance of smartphone cameras."
+    }
+  ],
+  "E-paper display": [
+    {
+      "image": "https://example.com/e_paper_display.jpg",
+      "explanation": "E-paper display (electronic paper display) mimics the appearance of ink on paper, offering low power consumption and high readability in sunlight."
+    }
+  ],
+  "External memory slot": [
+    {
+      "image": "https://example.com/external_memory_slot.jpg",
+      "explanation": "An external memory slot provides additional storage capacity via removable memory cards such as microSD, allowing users to expand the storage of their devices."
+    }
+  ],
+  "Fast charging": [
+    {
+      "image": "https://example.com/fast_charging.jpg",
+      "explanation": "Fast charging technology allows devices to recharge at a quicker rate than traditional charging methods, reducing the time needed to replenish battery power."
+    }
+  ],
+  "Fingerprint scanner": [
+    {
+      "image": "https://example.com/fingerprint_scanner.jpg",
+      "explanation": "A fingerprint scanner uses biometric authentication to verify a user's identity based on unique fingerprint patterns, enhancing device security and user convenience."
+    }
+  ],
+  "Floating-point performance": [
+    {
+      "image": "https://example.com/floating_point_performance.jpg",
+      "explanation": "Floating-point performance measures a device's ability to handle complex mathematical calculations involving decimal numbers, important for tasks like gaming and scientific simulations."
+    }
+  ],
+  "Geekbench result": [
+    {
+      "image": "https://example.com/geekbench_result.jpg",
+      "explanation": "Geekbench is a benchmarking tool that evaluates a device's CPU and GPU performance, providing numerical scores that indicate its processing power and efficiency."
+    }
+  ],
+  "GPS": [
+    {
+      "image": "https://example.com/gps.jpg",
+      "explanation": "Global Positioning System (GPS) enables accurate location tracking and navigation on devices using satellite signals, essential for mapping, directions, and location-based services."
+    }
+  ],
+  "GPU clock speed": [
+    {
+      "image": "https://example.com/gpu_clock_speed.jpg",
+      "explanation": "GPU clock speed refers to the frequency at which a graphics processing unit (GPU) operates, influencing its performance in rendering graphics and processing visual effects."
+    }
+  ],
+  "Gyroscope": [
+    {
+      "image": "https://example.com/gyroscope.jpg",
+      "explanation": "A gyroscope sensor detects angular rotation and provides orientation information, used in smartphones and VR devices for motion sensing and stabilization."
+    }
+  ],
+  "HDR mode": [
+    {
+      "image": "https://example.com/hdr_mode.jpg",
+      "explanation": "HDR (High Dynamic Range) mode captures and combines multiple exposures of a scene to produce a photo or video with greater dynamic range and detail, especially in high-contrast conditions."
+    }
+  ],
+  "Heart rate monitor": [
+    {
+      "image": "https://example.com/heart_rate_monitor.jpg",
+      "explanation": "A heart rate monitor tracks and displays the user's heart rate in real-time, commonly used in fitness trackers and smartwatches to monitor health and exercise performance."
+    }
+  ],
+  "Highest frequency": [
+    {
+      "image": "https://example.com/highest_frequency.jpg",
+      "explanation": "Highest frequency refers to the maximum clock speed at which a processor can operate under optimal conditions, indicating its peak performance capability."
+    }
+  ],
+  "Impedance": [
+    {
+      "image": "https://example.com/impedance.jpg",
+      "explanation": "Impedance measures the resistance of an electrical circuit to the flow of an alternating current (AC), influencing audio quality in headphones and audio devices."
+    }
+  ],
+  "Ingress Protection (IP) rating": [
+    {
+      "image": "https://example.com/ip_rating.jpg",
+      "explanation": "Ingress Protection (IP) rating classifies a device's resistance to dust and water intrusion based on standardized tests, ensuring durability and reliability in various environmental conditions."
+    }
+  ],
+  "Internal storage": [
+    {
+      "image": "https://example.com/internal_storage.jpg",
+      "explanation": "Internal storage refers to the built-in memory capacity of a device for storing apps, files, and data, providing quick access and performance compared to external storage."
+    }
+  ],
+  "Iris scanner": [
+    {
+      "image": "https://example.com/iris_scanner.jpg",
+      "explanation": "An iris scanner uses iris recognition technology to identify individuals based on unique patterns in the iris of their eyes, enhancing security and access control on devices."
+    }
+  ],
+  "Jog wheels": [
+    {
+      "image": "https://example.com/jog_wheels.jpg",
+      "explanation": "Jog wheels are tactile controls on electronic devices used for precise adjustments, commonly found on DJ controllers and audio equipment for manipulating audio tracks."
+    }
+  ],
+  "Keyless chuck": [
+    {
+      "image": "https://example.com/keyless_chuck.jpg",
+      "explanation": "A keyless chuck is a mechanism used in power tools to quickly and securely grip drill bits or other rotary tools without requiring a key for tightening."
+    }
+  ],
+  "Lowest frequency": [
+    {
+      "image": "https://example.com/lowest_frequency.jpg",
+      "explanation": "Lowest frequency refers to the minimum clock speed at which a processor operates, often related to power-saving modes or less demanding tasks."
+    }
+  ],
+  "Manual exposure": [
+    {
+      "image": "https://example.com/manual_exposure.jpg",
+      "explanation": "Manual exposure mode allows users to manually adjust camera settings such as aperture, shutter speed, and ISO sensitivity, providing creative control over the exposure of photos."
+    }
+  ],
+  "Manual focus": [
+    {
+      "image": "https://example.com/manual_focus.jpg",
+      "explanation": "Manual focus mode enables users to manually adjust the focus of a camera lens, useful for achieving precise focus on specific subjects or creative photography."
+    }
+  ],
+  "Manual ISO": [
+    {
+      "image": "https://example.com/manual_iso.jpg",
+      "explanation": "Manual ISO setting allows users to manually adjust the sensitivity of a camera sensor to light, balancing exposure and noise levels in photos."
+    }
+  ],
+  "Manual white balance": [
+    {
+      "image": "https://example.com/manual_white_balance.jpg",
+      "explanation": "Manual white balance adjustment enables users to manually set the color temperature of photos or videos, correcting color casts under different lighting conditions."
+    }
+  ],
+  "Maximum ISO": [
+    {
+      "image": "https://example.com/maximum_iso.jpg",
+      "explanation": "Maximum ISO refers to the highest sensitivity setting of a camera sensor, affecting its ability to capture images in low-light conditions with reduced noise."
+    }
+  ],
+  "Megapixels (main camera)": [
+    {
+      "image": "https://example.com/megapixels.jpg",
+      "explanation": "Megapixels (MP) measure the resolution of a camera sensor in millions of pixels, influencing the level of detail and image quality in photographs."
+    }
+  ],
+  "Memory bandwidth": [
+    {
+      "image": "https://example.com/memory_bandwidth.jpg",
+      "explanation": "Memory bandwidth refers to the rate at which data can be read from or written to the memory of a device, impacting overall performance in memory-intensive tasks."
+    }
+  ],
+  "NFC": [
+    {
+      "image": "https://example.com/nfc.jpg",
+      "explanation": "Near Field Communication (NFC) enables devices to establish communication by bringing them close together, used for contactless payments, data transfer, and device pairing."
+    }
+  ],
+  "Optical image stabilization (OIS)": [
+    {
+      "image": "https://example.com/ois.jpg",
+      "explanation": "Optical image stabilization (OIS) reduces blur caused by motion in photos and videos by physically adjusting the camera lens to compensate for camera shake."
+    }
+  ],
+  "Optical zoom": [
+    {
+      "image": "https://example.com/optical_zoom.jpg",
+      "explanation": "Optical zoom uses lens adjustments to magnify distant subjects in photographs without sacrificing image quality, providing clearer and sharper zoomed-in images."
+    }
+  ],
+  "Phase-detection autofocus (PDAF) for photos": [
+    {
+      "image": "https://example.com/pdaf.jpg",
+      "explanation": "Phase-detection autofocus (PDAF) for photos quickly and accurately focuses on subjects by detecting the phase differences in light rays, improving autofocus speed and performance."
+    }
+  ],
+  "Physical QWERTY keyboard": [
+    {
+      "image": "https://example.com/physical_qwerty.jpg",
+      "explanation": "A physical QWERTY keyboard provides tactile keys arranged in the QWERTY layout, offering a physical typing experience on mobile devices or external keyboards."
+    }
+  ],
+  "Pixel density": [
+    {
+      "image": "https://example.com/pixel_density.jpg",
+      "explanation": "Pixel density measures the number of pixels per inch (PPI) on a display screen, determining the sharpness, clarity, and detail of images and text."
+    }
+  ],
+  "Pixel rate": [
+    {
+      "image": "https://example.com/pixel_rate.jpg",
+      "explanation": "Pixel rate refers to the rate at which pixels can be rendered or processed by a graphics card, impacting its performance in rendering complex graphics and visual effects."
+    }
+  ],
+  "Pixel size (main camera)": [
+    {
+      "image": "https://example.com/pixel_size.jpg",
+      "explanation": "Pixel size (main camera) refers to the physical size of individual pixels on a camera sensor, affecting its light-gathering ability and low-light performance."
+    }
+  ],
+  "Pressure-sensitive display": [
+    {
+      "image": "https://example.com/pressure_sensitive_display.jpg",
+      "explanation": "Pressure-sensitive display responds to varying levels of pressure applied by the user's touch or stylus, enabling different actions or effects based on touch sensitivity."
+    }
+  ],
+  "Proximity sensor": [
+    {
+      "image": "https://example.com/proximity_sensor.jpg",
+      "explanation": "A proximity sensor detects the presence of nearby objects without physical contact, commonly used in smartphones to turn off the display during calls or enhance touchscreen interactions."
+    }
+  ],
+  "RAW support": [
+    {
+      "image": "https://example.com/raw_support.jpg",
+      "explanation": "RAW support allows cameras to capture uncompressed and unprocessed image files, preserving more detail and offering greater flexibility for post-processing."
+    }
+  ],
+  "Removable battery": [
+    {
+      "image": "https://example.com/removable_battery.jpg",
+      "explanation": "A removable battery can be easily detached and replaced by the user, providing flexibility in extending device usage without requiring professional service."
+    }
+  ],
+  "Resolution (main display)": [
+    {
+      "image": "https://example.com/resolution.jpg",
+      "explanation": "Resolution (main display) refers to the number of pixels that make up the display screen, determining its sharpness, clarity, and ability to display detailed content."
+    }
+  ],
+  "Screen-to-body ratio": [
+    {
+      "image": "https://example.com/screen_to_body_ratio.jpg",
+      "explanation": "Screen-to-body ratio compares the size of a device's display to the overall size of the front panel, indicating how much of the front is occupied by the screen."
+    }
+  ],
+  "Second display": [
+    {
+      "image": "https://example.com/second_display.jpg",
+      "explanation": "A second display provides additional screen space or functionality alongside the main display, offering multitasking capabilities or displaying supplementary information."
+    }
+  ],
+  "SIM card slot": [
+    {
+      "image": "https://example.com/sim_card_slot.jpg",
+      "explanation": "A SIM card slot holds a Subscriber Identity Module (SIM) card used to connect devices to a cellular network, enabling voice, data, and messaging services."
+    }
+  ],
+  "SIM type": [
+    {
+      "image": "https://example.com/sim_type.jpg",
+      "explanation": "SIM type refers to the physical form factor and size of a SIM card, such as Nano SIM or Micro SIM, determining compatibility with devices and networks."
+    }
+  ],
+  "Slow motion video": [
+    {
+      "image": "https://example.com/slow_motion.jpg",
+      "explanation": "Slow motion video mode captures footage at a higher frame rate than the standard recording mode, allowing playback at a slower speed for dramatic or detailed effect."
+    }
+  ],
+  "Standalone apps": [
+    {
+      "image": "https://example.com/standalone_apps.jpg",
+      "explanation": "Standalone apps operate independently without requiring additional devices or connections, offering standalone functionality or services on compatible devices."
+    }
+  ],
+  "Stylus support": [
+    {
+      "image": "https://example.com/stylus_support.jpg",
+      "explanation": "Stylus support enables users to interact with touchscreens using a stylus, offering precise input and additional features such as pressure sensitivity and palm rejection."
+    }
+  ],
+  "Swappable faceplates": [
+    {
+      "image": "https://example.com/swappable_faceplates.jpg",
+      "explanation": "Swappable faceplates allow users to change the external appearance of devices by replacing faceplates or covers, customizing the device's look or protection."
+    }
+  ],
+  "Temperature sensor": [
+    {
+      "image": "https://example.com/temperature_sensor.jpg",
+      "explanation": "A temperature sensor measures ambient temperature or device temperature, providing information for environmental monitoring or thermal management."
+    }
+  ],
+  "Text-to-Speech (TTS)": [
+    {
+      "image": "https://example.com/tts.jpg",
+      "explanation": "Text-to-Speech (TTS) converts written text into spoken words, enabling devices to audibly read text content such as messages, articles, or notifications."
+    }
+  ],
+  "Third party keyboard support": [
+    {
+      "image": "https://example.com/third_party_keyboard.jpg",
+      "explanation": "Third-party keyboard support allows users to install and use alternative keyboards from third-party developers, offering different layouts, features, or customization options."
+    }
+  ],
+  "Touchscreen type": [
+    {
+      "image": "https://example.com/touchscreen.jpg",
+      "explanation": "Touchscreen type refers to the technology used in a device's touchscreen interface, such as capacitive or resistive, influencing responsiveness and accuracy of touch input."
+    }
+  ],
+  "Ultra-wide angle lens": [
+    {
+      "image": "https://example.com/ultra_wide_angle.jpg",
+      "explanation": "Ultra-wide angle lens captures a wider field of view than standard lenses, allowing users to fit more into the frame for expansive landscapes or group photos."
+    }
+  ],
+  "USB connector type": [
+    {
+      "image": "https://example.com/usb_connector.jpg",
+      "explanation": "USB connector type specifies the physical connector used for USB connectivity, such as USB Type-C or Micro USB, determining compatibility and data transfer speeds."
+    }
+  ],
+  "Video recording resolution (main)": [
+    {
+      "image": "https://example.com/video_recording.jpg",
+      "explanation": "Video recording resolution (main) refers to the maximum resolution supported for capturing videos using the device's primary camera, affecting video quality and detail."
+    }
+  ],
+  "Voice commands": [
+    {
+      "image": "https://example.com/voice_commands.jpg",
+      "explanation": "Voice commands enable users to interact with devices using spoken commands or instructions, performing tasks such as calling contacts, searching the web, or controlling apps."
+    }
+  ],
+  "Watermarking feature": [
+    {
+      "image": "https://example.com/watermarking.jpg",
+      "explanation": "Watermarking feature allows users to add digital watermarks to photos or documents, protecting intellectual property or identifying the source of shared content."
+    }
+  ],
+  "Waterproof": [
+    {
+      "image": "https://example.com/waterproof.jpg",
+      "explanation": "Waterproof devices are designed to resist water ingress or immersion up to a specified depth or duration, ensuring durability and reliability in wet or aquatic environments."
+    }
+  ],
+  "Weight": [
+    {
+      "image": "https://example.com/weight.jpg",
+      "explanation": "Weight measures the mass of a device, influencing portability and comfort during use, with lighter devices being more convenient for daily carrying or handling."
+    }
+  ],
+  "Wi-Fi Direct": [
+    {
+      "image": "https://example.com/wifi_direct.jpg",
+      "explanation": "Wi-Fi Direct enables devices to establish a direct wireless connection without a router, facilitating file sharing, media streaming, or device-to-device communication."
+    }
+  ],
+  "Wi-Fi standards supported": [
+    {
+      "image": "https://example.com/wifi_standards.jpg",
+      "explanation": "Wi-Fi standards supported specify the versions of Wi-Fi technology supported by a device, such as 802.11ac or 802.11ax (Wi-Fi 6), determining data transfer speeds and connectivity."
+    }
+  ],
+  "Wireless charging": [
+    {
+      "image": "https://example.com/wireless_charging.jpg",
+      "explanation": "Wireless charging technology allows devices to charge without physical cables by placing them on a compatible charging pad or stand, offering convenience and cable-free operation."
+    }
+  ],
+  "Wireless video playback": [
+    {
+      "image": "https://example.com/wireless_video.jpg",
+      "explanation": "Wireless video playback enables devices to stream or display video content wirelessly to compatible displays, such as smart TVs or monitors, using wireless technologies like Miracast or AirPlay."
+    }
+  ],
+  "Zoom capability": [
+    {
+      "image": "https://example.com/zoom_capability.jpg",
+      "explanation": "Zoom capability refers to a device's ability to magnify or enlarge images or text, usually in the context of cameras or digital displays, offering enhanced visibility or detail."
+    }
+  ]
+}
