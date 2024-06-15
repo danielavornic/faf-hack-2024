@@ -25,3 +25,13 @@ html, body {
   border-radius: 10px;
   border: 2px solid #110f40;
 }  
+
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+img:hover {
+  -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0);
+}

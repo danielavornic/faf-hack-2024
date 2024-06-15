@@ -1,25 +1,54 @@
-import { Layout } from "@/components";
-import { Link } from "@chakra-ui/next-js";
-import { Button, Container, Heading, Input, Text } from "@chakra-ui/react";
+import { Layout, Navbar } from "@/components";
+import { Button, Container, Heading, Input, Text, Flex, Link } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import { TypeAnimation } from "react-type-animation";
+import CategoryCard from "@/components/CategoryCard";
+import { Flame, LaptopMinimal } from "lucide-react";
+import { Grid, GridItem } from "@chakra-ui/react";
+
+const categories = [
+  {
+    title: "Laptops",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    title: "Smartphones",
+    image:
+      "https://images.unsplash.com/photo-1536846670933-ce6eef8dfe89?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    title: "Computers & Accessories",
+    image:
+      "https://images.unsplash.com/photo-1547082299-de196ea013d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    title: "Photo & Video",
+    image:
+      "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    title: "Audio",
+    image:
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  }
+];
 
 export default function Home() {
   const router = useRouter();
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data: any) => {
-    console.log(data);
     router.push(`/search?q=${data.search}`);
   };
 
   return (
     <Layout title="Home">
-      <section className="relative mt-[-73px] flex h-[95vh] w-full flex-col items-center justify-center bg-[#04031b] bg-[url('/images/hero.png')] bg-cover">
-        {/* <Heading as="h1" size="4xl" color="white" textAlign="center" pb={6} fontWeight={900}>
-          Hello World
-        </Heading> */}
+      <section
+        id="categories"
+        className="relative -mt-[69px] flex h-[800px] w-full flex-col items-center justify-center bg-[#04031b] bg-[url('/images/hero.png')] bg-cover"
+      >
         <Heading as="h1" size="3xl" color="white" textAlign="center" pb={6} fontWeight={900}>
           <TypeAnimation
             preRenderFirstString={true}
@@ -56,24 +85,13 @@ export default function Home() {
                 {...register("search")}
               />
             </form>
-            {/* <Button
-              ml={2}
-              size="lg"
-              variant={"outline"}
-              h={16}
-              px="10"
-              // rightIcon={<SearchIcon size="20" className="mt-[-3px]" />}
-              className="flex items-center !rounded-[12px] bg-white text-transparent"
-            >
-              Search
-            </Button> */}
           </div>
           <div className="flex w-full items-center justify-center space-x-4">
             <hr className="border-1 w-1/4 bg-gray-600 opacity-50" />
             <span className="text-lg font-semibold text-gray-200">or</span>
             <hr className="border-1 w-1/4 bg-gray-600 opacity-50" />
           </div>
-          <Link href="/survery">
+          <Link href="/survey">
             <Button
               colorScheme="brand"
               ml={2}
@@ -88,8 +106,33 @@ export default function Home() {
         </div>
       </section>
       <Container maxW="container.xl" py={6} as="main" minH="10vh">
-        <section className="py-12">Categories</section>
-        <section className="py-12">Popular releases</section>
+        <section className="py-12">
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <LaptopMinimal style={{ width: "50px", height: "50px", color: "#04031b" }} />
+          </div>
+          <Heading as="h2" mb={6} textAlign="center" color="brand.900">
+            Categories
+          </Heading>
+          <Grid templateColumns="repeat(5, 1fr)" gap={6}>
+            {categories.map((category) => (
+              <GridItem key={category.title}>
+                <CategoryCard
+                  title={category.title}
+                  image={category.image}
+                  category={category.title.toLowerCase()}
+                />
+              </GridItem>
+            ))}
+          </Grid>
+        </section>
+        <section id="popular-releases" className="py-12">
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <Flame style={{ width: "50px", height: "50px", color: "#04031b" }} />
+          </div>
+          <Heading as="h2" mb={6} textAlign="center" color="brand.900">
+            Popular releases
+          </Heading>
+        </section>
       </Container>
     </Layout>
   );
