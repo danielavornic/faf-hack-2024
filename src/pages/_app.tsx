@@ -8,6 +8,9 @@ import "@fontsource/poppins";
 import { useRef } from "react";
 import { AppStore, makeStore } from "@/lib/store";
 import { Provider } from "react-redux";
+import { AppProps } from "next/app";
+import ComparisonInitializer from "@/components/ComparisonInitializer";
+import { Toaster } from "react-hot-toast";
 
 const queryClient = new QueryClient();
 
@@ -42,9 +45,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={storeRef.current}>
       <ChakraProvider theme={theme}>
-        <QueryClientProvider client={queryClient}>
-          <Component {...pageProps} />
-        </QueryClientProvider>
+        <ComparisonInitializer>
+          <QueryClientProvider client={queryClient}>
+            <Component {...pageProps} />
+          </QueryClientProvider>
+        </ComparisonInitializer>
+        <Toaster position="top-left" />
       </ChakraProvider>
     </Provider>
   );

@@ -9,6 +9,8 @@
 html, body {
   @apply overflow-x-hidden;
   /* background:#fbfaff */
+
+	scroll-behavior: smooth;
 }
 
 .font-poppins {

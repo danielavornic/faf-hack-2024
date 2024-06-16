@@ -1,4 +1,4 @@
-import { useAppDispatch } from "@/lib/hooks";
+import { useAppDispatch, useComparison } from "@/lib/hooks";
 import { Phone } from "@/types";
 import { Link } from "@chakra-ui/next-js";
 import {
@@ -18,10 +18,11 @@ import {
   Tooltip
 } from "@chakra-ui/react";
 import clsx from "clsx";
-import { Check, ChevronDown, Plus } from "lucide-react";
+import { Check, ChevronDown, Minus, Plus } from "lucide-react";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
+import { toast } from "react-hot-toast";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -31,8 +32,18 @@ import {
   Legend
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
+import { removePhone, togglePhone } from "@/lib/slices/comparisonSlice";
 
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Legend);
+
+const options = {
+  // config options <<<<<<<<---------
+  plugins: {
+    legend: {
+      display: false
+    }
+  }
+};
 
 const topLinks = [
   {
@@ -40,42 +51,56 @@ const topLinks = [
     url: "#overview"
   },
   {
-    name: "Display",
-    url: "#display"
+    name: "Prices",
+    url: "#prices"
   },
   {
     name: "Performance",
     url: "#performance"
   },
   {
-    name: "Camera",
-    url: "#camera"
+    name: "Display",
+    url: "#display"
   },
   {
-    name: "Price",
-    url: "#price"
+    name: "Camera",
+    url: "#camera"
   }
 ];
 
-export const data = {
-  labels: ["Thing 1", "Thing 2", "Thing 3", "Thing 4", "Thing 5", "Thing 6"],
-  datasets: [
-    {
-      label: "Phone 1",
-      data: [2, 9, 3, 5, 2, 3],
-      backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgba(78, 99, 132, 1)",
-      borderWidth: 1
-    },
-    {
-      label: "Phone 2",
-      data: [5, 6, 7, 5, 1, 3],
-      backgroundColor: "rgba(255, 99, 132, 0.2)",
-      borderColor: "rgba(255, 99, 132, 1)",
-      borderWidth: 1
-    }
-  ]
+const backentRadarData = {
+  labels: ["Design", "Performance", "Display", "Battery", "Camera", "Storage"],
+  dataset1: {
+    data: [83, 45, 45, 80, 50, 25]
+  },
+  dataset2: {
+    data: [61, 48, 44, 64, 11, 50]
+  }
 };
+
+const formatRadarData = (data: any) => {
+  return {
+    labels: data.labels,
+    datasets: [
+      {
+        label: "Phone 1",
+        data: data.dataset1.data,
+        backgroundColor: "#502fb750",
+        borderColor: "#502fb7",
+        borderWidth: 1
+      },
+      {
+        label: "Phone 2",
+        data: data.dataset2.data,
+        backgroundColor: "#DD6B2020",
+        borderColor: "#DD6B20",
+        borderWidth: 1
+      }
+    ]
+  };
+};
+
+export const data = formatRadarData(backentRadarData);
 
 export const PhoneOverview = ({
   phone1,
@@ -106,6 +131,9 @@ export const PhoneOverview = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const { phones } = useComparison();
+  const isPhone1InComparison = phones.some((p) => p.id === phone1.id);
+
   return (
     <div>
       <div className="border-b border-gray-200 bg-white">
@@ -128,10 +156,27 @@ export const PhoneOverview = ({
             {!phone2 && (
               <button
                 className="bg-brand-500 flex items-center gap-2 px-4 py-2 text-white"
-                onClick={() => router.back()}
+                onClick={() => {
+                  if (phones.length >= 2) {
+                    toast.error("You can only compare up to 2 phones");
+                    return;
+                  }
+
+                  if (isPhone1InComparison) {
+                    dispatch(removePhone(phone1.id));
+                    toast.success(`${phone1.name} removed from comparison`);
+                  } else {
+                    dispatch(togglePhone(phone1));
+                    toast.success(`${phone1.name} added to comparison`);
+                  }
+                }}
               >
-                <Plus size={16} className="mr-2" />
-                <span>Add to comparison</span>
+                {isPhone1InComparison ? (
+                  <Minus size={16} className="mr-2" />
+                ) : (
+                  <Plus size={16} className="mr-2" />
+                )}
+                <span>{isPhone1InComparison ? "Remove from comparison" : "Add to comparison"}</span>
               </button>
             )}
           </div>
@@ -170,6 +215,11 @@ export const PhoneOverview = ({
               <div className="relative flex">
                 <img src={phone1.imageUrl} alt={phone1.name} className="h-[500px]" />
                 <div className="bg-phone absolute bottom-0 h-[30%] w-full"></div>
+                {winnerId === phone1.id && (
+                  <div className="bg-brand-500 absolute -left-8 top-8 rounded-lg px-4 py-2 font-semibold text-white">
+                    Winner
+                  </div>
+                )}
                 <div className="text-brand-500 border-brand-500 absolute -right-16 bottom-0 rounded-[100px] border-2 bg-white bg-opacity-65 px-8 py-3 text-2xl font-medium italic backdrop-blur-md">
                   $ {phone1.avgPrice}
                 </div>
@@ -178,8 +228,6 @@ export const PhoneOverview = ({
           </div>
           {phone2 && (
             <>
-              {/*  vertical line with vs written */}
-              {/* <div className="mx-[100px] h-[500px] w-0.5 bg-gray-200"></div> */}
               <div className="font-poppins mx-[120px] text-3xl font-medium text-gray-400 opacity-90">
                 vs
               </div>
@@ -213,6 +261,12 @@ export const PhoneOverview = ({
                   <div className="relative flex">
                     <img src={phone2.imageUrl} alt={phone2.name} className="h-[500px]" />
                     <div className="bg-phone absolute bottom-0 h-[30%] w-full"></div>
+                    {/* Add "comparison winner" */}
+                    {winnerId === phone2.id && (
+                      <div className="bg-brand-500 absolute left-0 top-0 rounded-lg px-2 py-1 font-semibold text-white">
+                        Winner
+                      </div>
+                    )}
                     <div className="text-brand-500 border-brand-500 absolute -right-16 bottom-0 rounded-[100px] border-2 bg-white bg-opacity-65 px-8 py-3 text-2xl font-medium italic backdrop-blur-md">
                       $ {phone2.avgPrice}
                     </div>
@@ -232,10 +286,22 @@ export const PhoneOverview = ({
       </Container>
       <section id="overview" className="border-t border-gray-200 bg-white py-8">
         <Container maxW="8xl">
-          <Tabs colorScheme="brand">
-            <TabList>
-              <Tab className="font-poppins !text-lg !font-medium">{phone1.name}</Tab>
-              {phone2 && <Tab className="font-poppins !text-lg !font-medium">{phone2.name}</Tab>}
+          <Tabs variant="unstyled">
+            <TabList className="border-b border-gray-300">
+              <Tab
+                className="font-poppins !text-lg !font-medium"
+                _selected={{ color: "brand.500", borderBottom: "2px solid" }}
+              >
+                {phone1.name}
+              </Tab>
+              {phone2 && (
+                <Tab
+                  className="font-poppins !text-lg !font-medium"
+                  _selected={{ color: "orange.500", borderBottom: "2px solid" }}
+                >
+                  {phone2.name}
+                </Tab>
+              )}
             </TabList>
 
             <TabPanels>
@@ -255,7 +321,12 @@ const PhoneTab = ({ phone, otherPhone }: { phone: Phone; otherPhone?: Phone }) =
       <div className="flex py-4">
         <div className="w-1/2">
           <div className="pl-12 pr-20">
-            <Radar data={data} />
+            <Radar data={data} options={options} />
+            <p className="mt-4 text-center text-gray-800">
+              <span className="text-brand-500 text-2xl font-bold">{phone.score}</span>
+              <br />
+              Points
+            </p>
           </div>
         </div>{" "}
         <div className="w-1/2">

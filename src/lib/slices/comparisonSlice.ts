@@ -4,11 +4,11 @@ import { Phone } from "@/types";
 import { set } from "react-hook-form";
 
 interface ComparisonState {
-  Phones: Phone[];
+  phones: Phone[];
 }
 
 const initialState: ComparisonState = {
-  Phones: []
+  phones: []
 };
 
 const comparisonSlice = createSlice({
@@ -16,35 +16,35 @@ const comparisonSlice = createSlice({
   initialState,
   reducers: {
     addPhone(state, action: PayloadAction<Phone>) {
-      if (state.Phones.length < 2) {
-        state.Phones.push(action.payload);
+      if (state.phones.length < 2) {
+        state.phones.push(action.payload);
 
-        localStorage.setItem("Phones", JSON.stringify(state.Phones));
+        localStorage.setItem("phones", JSON.stringify(state.phones));
       }
     },
     removePhone(state, action: PayloadAction<number>) {
-      state.Phones = state.Phones.filter((Phone) => Phone.id !== action.payload);
+      state.phones = state.phones.filter((Phone) => Phone.id !== action.payload);
 
-      localStorage.setItem("Phones", JSON.stringify(state.Phones));
+      localStorage.setItem("phones", JSON.stringify(state.phones));
     },
     togglePhone(state, action: PayloadAction<Phone>) {
       // check if it is already in the comparison
-      const index = state.Phones.findIndex((Phone) => Phone.id === action.payload.id);
+      const index = state.phones.findIndex((Phone) => Phone.id === action.payload.id);
 
       if (index !== -1) {
-        state.Phones = state.Phones.filter((Phone) => Phone.id !== action.payload.id);
+        state.phones = state.phones.filter((Phone) => Phone.id !== action.payload.id);
 
-        localStorage.setItem("Phones", JSON.stringify(state.Phones));
+        localStorage.setItem("phones", JSON.stringify(state.phones));
       }
 
-      if (state.Phones.length < 2) {
-        state.Phones.push(action.payload);
+      if (state.phones.length < 2) {
+        state.phones.push(action.payload);
 
-        localStorage.setItem("Phones", JSON.stringify(state.Phones));
+        localStorage.setItem("phones", JSON.stringify(state.phones));
       }
     },
     setComparison(state, action: PayloadAction<Phone[]>) {
-      state.Phones = action.payload;
+      state.phones = action.payload;
     }
   }
 });
