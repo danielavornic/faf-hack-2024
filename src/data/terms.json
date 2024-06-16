@@ -7,8 +7,8 @@
   ],
   "360° panorama mode": [
     {
-    "image": "https://d2kbvjszk9d5ln.cloudfront.net/yshop/upload/pic/03-20220922062808996.jpg",
-    "explanation": "360° panorama mode allows you to capture a seamless panoramic view in all directions, providing an immersive experience."
+      "image": "https://d2kbvjszk9d5ln.cloudfront.net/yshop/upload/pic/03-20220922062808996.jpg",
+      "explanation": "360° panorama mode allows you to capture a seamless panoramic view in all directions, providing an immersive experience."
     }
   ],
   "3D facial recognition": [
@@ -395,6 +395,12 @@
       "explanation": "A proximity sensor detects the presence of nearby objects without physical contact, commonly used in smartphones to turn off the display during calls or enhance touchscreen interactions."
     }
   ],
+  "RAM": [
+    {
+      "image": "https://academy.avast.com/hubfs/New_Avast_Academy/How%20to%20check%20your%20RAM%20memory/How_to_Check_How_Much_RAM_You_Have-Thumb.jpg#keepProtocol",
+      "explanation": "RAM (Random Access Memory) stores data and instructions for active applications, influencing multitasking performance and responsiveness on devices."
+    }
+  ],
   "RAW support": [
     {
       "image": "https://example.com/raw_support.jpg",
@@ -417,6 +423,12 @@
     {
       "image": "https://example.com/screen_to_body_ratio.jpg",
       "explanation": "Screen-to-body ratio compares the size of a device's display to the overall size of the front panel, indicating how much of the front is occupied by the screen."
+    }
+  ],
+  "Screen size": [
+    {
+      "image": "https://www.inchcalculator.com/wp-content/uploads/2021/01/screen-sizes.png",
+      "explanation": "The size of a screen is usually described by the length of its diagonal, which is the distance between opposite corners, usually in inches. It is also sometimes called the physical image size to distinguish it from the logical image size, which describes a screen's display resolution and is measured in pixels."
     }
   ],
   "Second display": [
