@@ -93,7 +93,7 @@ const Glossary: React.FC = () => {
                         {letter}
                       </Heading>
                     </Center>
-                    <List display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                    <List display="flex" justifyContent="center" alignItems="center">
                       {glossaryTerms[letter as any]?.map((term: any, index: number) => {
                         return (
                           <React.Fragment key={term}>

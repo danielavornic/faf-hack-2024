@@ -70,11 +70,27 @@ export const Navbar = () => {
             color="white"
             size="sm"
             onClick={() => router.push("/categories")}
+            _hover={{ color: "brand.200" }}
           >
             Categories
           </Button>
-          <Button variant="ghost" color="white" size="sm" onClick={() => router.push("/glossary")}>
+          <Button
+            variant="ghost"
+            color="white"
+            size="sm"
+            onClick={() => router.push("/glossary")}
+            _hover={{ color: "brand.200" }}
+          >
             Glossary
+          </Button>
+          <Button
+            variant="ghost"
+            color="white"
+            size="sm"
+            onClick={() => router.push("/video-glossary")}
+            _hover={{ color: "brand.200" }}
+          >
+            Video Glossary
           </Button>
           <Button
             variant="ghost"

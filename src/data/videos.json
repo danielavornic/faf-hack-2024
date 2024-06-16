@@ -1,0 +1,62 @@
+{
+  "Laptops": [
+    {
+      "title": "Introduction to Laptops",
+      "description": "Learn the basics of laptops and their components.",
+      "url": "https://www.youtube.com/watch?v=6LIv2ocJXRk"
+    },
+    {
+      "title": "How to Choose a Laptop",
+      "description": "Tips on selecting the right laptop for your needs.",
+      "url": "https://example.com/choose_laptop.jpg"
+    }
+  ],
+  "Smartphones": [
+    {
+      "title": "Smartphone Essentials",
+      "description": "A beginner's guide to using smartphones.",
+      "url": "https://example.com/smartphone_essentials.jpg"
+    },
+    {
+      "title": "Top Smartphone Picks 2024",
+      "description": "Our recommendations for the best smartphones of the year.",
+      "url": "https://example.com/top_smartphones_2024.jpg"
+    }
+  ],
+  "Computers & Accessories": [
+    {
+      "title": "Understanding Computers",
+      "description": "An introduction to computers and their peripherals.",
+      "url": "https://example.com/computers_intro.jpg"
+    },
+    {
+      "title": "Choosing Computer Accessories",
+      "description": "Tips on selecting the right accessories for your computer setup.",
+      "url": "https://example.com/choose_accessories.jpg"
+    }
+  ],
+  "Photo & Video": [
+    {
+      "title": "Photography Basics",
+      "description": "Learn the fundamentals of photography.",
+      "url": "https://example.com/photography_basics.jpg"
+    },
+    {
+      "title": "Editing Videos",
+      "description": "Basic video editing techniques for beginners.",
+      "url": "https://example.com/editing_videos.jpg"
+    }
+  ],
+  "Audio": [
+    {
+      "title": "Audio Equipment Guide",
+      "description": "An overview of audio equipment and its uses.",
+      "url": "https://example.com/audio_equipment.jpg"
+    },
+    {
+      "title": "Recording Techniques",
+      "description": "Tips and techniques for recording audio.",
+      "url": "https://example.com/recording_techniques.jpg"
+    }
+  ]
+}
