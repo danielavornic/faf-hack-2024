@@ -21,7 +21,7 @@ const smartphones = () => {
   return (
     <Layout title="Smartphones" className="bg-[#fbfaff]">
       <PageHeader title="Smartphones" subtitle="Browse the latest smartphones in the market." />
-      <Container maxW="8xl" className="min-h-[200vh]">
+      <Container maxW="8xl" className="min-h-[105vh]">
         <Flex gap={3} mt={4} maxW="70%" flexWrap="wrap">
           {tags.map((tag) => (
             <Button
