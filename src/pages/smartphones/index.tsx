@@ -1,7 +1,7 @@
 import { FiltersCard, Layout, PageHeader } from "@/components";
 import { Button, Container, Flex } from "@chakra-ui/react";
 import smartphonesData from "@/data/phones.json";
-import { PhoneCard } from "@/components/smartphones/PhoneCard";
+import PhoneCard from "@/components/smartphones/PhoneCard";
 
 const tags = [
   "Top 10",
@@ -43,9 +43,9 @@ const smartphones = () => {
           <div className="mt-4 w-full flex-1">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               <PhoneCard phone={smartphonesData[0]} />
-              {/* {phones.map((phone) => (
+              {smartphonesData.map((phone) => (
                 <PhoneCard key={phone.id} phone={phone} />
-              ))} */}
+              ))}
             </div>
           </div>
         </Flex>
