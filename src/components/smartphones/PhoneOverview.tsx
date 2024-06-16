@@ -22,6 +22,17 @@ import { Check, ChevronDown, Plus } from "lucide-react";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Legend
+} from "chart.js";
+import { Radar } from "react-chartjs-2";
+
+ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Legend);
 
 const topLinks = [
   {
@@ -45,6 +56,26 @@ const topLinks = [
     url: "#price"
   }
 ];
+
+export const data = {
+  labels: ["Thing 1", "Thing 2", "Thing 3", "Thing 4", "Thing 5", "Thing 6"],
+  datasets: [
+    {
+      label: "Phone 1",
+      data: [2, 9, 3, 5, 2, 3],
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderColor: "rgba(78, 99, 132, 1)",
+      borderWidth: 1
+    },
+    {
+      label: "Phone 2",
+      data: [5, 6, 7, 5, 1, 3],
+      backgroundColor: "rgba(255, 99, 132, 0.2)",
+      borderColor: "rgba(255, 99, 132, 1)",
+      borderWidth: 1
+    }
+  ]
+};
 
 export const PhoneOverview = ({
   phone1,
@@ -121,11 +152,11 @@ export const PhoneOverview = ({
                     classes={{
                       root: "align-middle",
                       text: clsx(
-                        "text-[24px] fill-blue-500 font-bold l-1 text-anchor-middle dominant-baseline-middle"
+                        "text-[24px] fill-brand-700 font-bold l-1 text-anchor-middle dominant-baseline-middle"
                       ),
-                      background: clsx("opacity-10 fill-blue-500"),
+                      background: clsx("opacity-10 fill-brand-700"),
                       trail: "bg-transparent",
-                      path: clsx("stroke-blue-500")
+                      path: clsx("stroke-brand-700")
                     }}
                   />
                 </div>
@@ -164,11 +195,11 @@ export const PhoneOverview = ({
                         classes={{
                           root: "align-middle",
                           text: clsx(
-                            "text-[24px] fill-blue-500 font-bold l-1 text-anchor-middle dominant-baseline-middle"
+                            "text-[24px] fill-brand-700 font-bold l-1 text-anchor-middle dominant-baseline-middle"
                           ),
-                          background: clsx("opacity-10 fill-blue-500"),
+                          background: clsx("opacity-10 fill-brand-700"),
                           trail: "bg-transparent",
-                          path: clsx("stroke-blue-500")
+                          path: clsx("stroke-brand-700")
                         }}
                       />
                     </div>
@@ -223,7 +254,9 @@ const PhoneTab = ({ phone, otherPhone }: { phone: Phone; otherPhone?: Phone }) =
     <TabPanel>
       <div className="flex py-4">
         <div className="w-1/2">
-          <h1>graph</h1>
+          <div className="pl-12 pr-20">
+            <Radar data={data} />
+          </div>
         </div>{" "}
         <div className="w-1/2">
           <h3 className="font-poppins text-xl font-semibold">

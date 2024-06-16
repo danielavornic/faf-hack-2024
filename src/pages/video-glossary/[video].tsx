@@ -124,7 +124,7 @@ const VideoDetailsPage = () => {
             w="100%"
             maxW="100%"
             mx="auto"
-            p={8}
+            px={8}
             gridColumn={{ base: "1 / -1", md: "span 2" }} // 3 out of 5 columns
             className="aspect-w-4 aspect-h-3" // Custom aspect ratio
           >
