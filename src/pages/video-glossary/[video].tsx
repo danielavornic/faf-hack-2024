@@ -71,7 +71,7 @@ const VideoDetailsPage = () => {
         subtitle="Watch and learn from our video tutorials."
       />
       <Container maxW="8xl" py={6}>
-        <SimpleGrid columns={{ base: 1, md: 4 }} spacing={10}>
+        <Flex>
           <Box
             flex="1"
             p={4}
@@ -80,14 +80,12 @@ const VideoDetailsPage = () => {
             borderWidth="1px"
             borderColor="gray.300"
             backgroundColor="white"
-            gridColumn={{ base: "1 / -1", md: "span 1" }} // 2 out of 5 columns
+            minWidth="320px"
+            maxHeight="80vh"
+            height="fit-content"
+            // gridColumn={{ base: "1 / -1", md: "span 1" }} // 2 out of 5 columns
           >
-            <Stack
-              spacing={4}
-              maxH="75vh"
-              className="custom-scrollbar overflow-y-auto"
-              overflowX="hidden"
-            >
+            <Stack spacing={4} className="!overflow-y-none">
               {Object.keys(videoData).map((category) => (
                 <Box key={category}>
                   <Heading as="h2" size="md" mb={2} color="brand.700">
@@ -133,7 +131,7 @@ const VideoDetailsPage = () => {
             <Heading as="h1" mb={4} textAlign="center" color="brand.900">
               {selectedVideo.title}
             </Heading>
-            <Box
+            {/* <Box
               p={4}
               bg="white"
               borderWidth="1px"
@@ -145,20 +143,20 @@ const VideoDetailsPage = () => {
               flexDirection="column"
               justifyContent="center"
               alignItems="center"
-            >
-              <ReactPlayer
-                url={selectedVideo.url}
-                controls
-                width="100%"
-                height="100%"
-                style={{ borderRadius: "12px" }}
-              />
-              <Text textAlign="justify" mt={4}>
-                {selectedVideo.description}
-              </Text>
-            </Box>
+            > */}
+            <ReactPlayer
+              url={selectedVideo.url}
+              controls
+              width="100%"
+              height="600px"
+              style={{ borderRadius: "12px" }}
+            />
+            <Text textAlign="justify" mt={4}>
+              {selectedVideo.description}
+            </Text>
+            {/* </Box> */}
           </Flex>
-        </SimpleGrid>
+        </Flex>
       </Container>
     </Layout>
   );
