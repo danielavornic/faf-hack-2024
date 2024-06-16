@@ -2,17 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import glossaryTerms from "@/data/terms.json";
 import glossaryByLetter from "@/data/glossaryTerms.json";
-import {
-  Box,
-  Heading,
-  Image,
-  Text,
-  Stack,
-  List,
-  ListItem,
-  Flex,
-  Container
-} from "@chakra-ui/react";
+import { Box, Heading, Text, Stack, List, ListItem, Flex, Container } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/next-js";
 import { Layout, PageHeader } from "@/components";
 
@@ -24,12 +14,10 @@ const TermPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  // Ensure slug is a string and exists in glossaryTerms
   if (typeof slug !== "string" || !(slug in glossaryTerms)) {
     return <div>Term not found</div>;
   }
 
-  // Extract the term info from glossaryTerms based on the slug
   const termInfo = glossaryTerms[slug][0]; // Assuming each term has only one item in the array
   const [selectedTerm, setSelectedTerm] = React.useState<string | null>(null);
 
