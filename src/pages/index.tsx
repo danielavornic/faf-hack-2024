@@ -45,11 +45,11 @@ export default function Home() {
 
   return (
     <Layout title="Home">
-      <section
-        id="categories"
-        className="relative -mt-[69px] flex h-[800px] w-full flex-col items-center justify-center bg-[#04031b] bg-[url('/images/hero.png')] bg-cover"
-      >
-        <Heading as="h1" size="3xl" color="white" textAlign="center" pb={6} fontWeight={900}>
+      <section className="relative mt-[-73px] flex h-[95vh] w-full flex-col items-center justify-center bg-[#04031b] bg-[url('/images/hero.png')] bg-cover">
+        {/* <Heading as="h1" size="4xl" color="white" textAlign="center" pb={6} fontWeight={900}>
+          Hello World
+        </Heading> */}
+        <Heading as="h1" size="3xl" color="white" textAlign="center" pb={6}>
           <TypeAnimation
             preRenderFirstString={true}
             sequence={[

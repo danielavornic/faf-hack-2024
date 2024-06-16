@@ -23,7 +23,6 @@ export const Layout = ({
       </Head>
       <Navbar />
       <main className={clsx("min-h-[calc(100vh-73px)]", className)}>{children}</main>
-      {!hideFooter && <Footer />}
     </>
   );
 };

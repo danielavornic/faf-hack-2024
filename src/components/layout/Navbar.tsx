@@ -31,9 +31,8 @@ export const Navbar = () => {
 
   return (
     <div
-      className={clsx("relative z-[1] w-full border-b border-opacity-30 text-white", {
-        "bg-brand-900": !isHome,
-        "border-white": isHome
+      className={clsx("relative z-[1] w-full border-b border-white border-opacity-30 !text-white", {
+        "bg-black": !isHome
       })}
     >
       <Container maxW="8xl" py={3} className="flex items-center justify-between py-2">

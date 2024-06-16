@@ -125,21 +125,21 @@
     ]
   },
   {
-    "question": "How often do you want to charge your phone?",
+    "question": "How much battery life do you need on your phone?",
     "type": "radio",
     "name": "batteryLife",
     "options": [
       {
-        "label": "Charge daily",
-        "value": "daily"
+        "label": "All-day battery life",
+        "value": "all_day"
       },
       {
-        "label": "Charge every few days",
-        "value": "few_days"
+        "label": "Long battery life (2 days or more)",
+        "value": "long"
       },
       {
-        "label": "Charge as rarely as possible",
-        "value": "rarely"
+        "label": "Average battery life (1 day)",
+        "value": "average"
       }
     ]
   },
