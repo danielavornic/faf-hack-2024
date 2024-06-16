@@ -27,7 +27,8 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hero: "radial-gradient(ellipse 130% 210% at 95% 0,#7248d0 10%,#04031b 70%)",
         "footer-gradient":
-          "linear-gradient(0deg, #04031b 2%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,0) 100%)"
+          "linear-gradient(0deg, #04031b 2%, rgba(0,0,0,0.2) 75%, rgba(0,0,0,0) 100%)",
+        phone: "linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,.7) 50%,#fbfaff)"
       }
     }
   },

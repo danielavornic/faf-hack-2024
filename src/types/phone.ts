@@ -3,6 +3,7 @@ export interface Phone {
   name: string;
   avgPrice: number;
   imageUrl: string;
+  score: number;
   expertsFeedback: string;
   overview: {
     value: string | number;

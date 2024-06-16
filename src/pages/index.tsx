@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import { TypeAnimation } from "react-type-animation";
 import CategoryCard from "@/components/CategoryCard";
-import { Flame, LaptopMinimal } from "lucide-react";
+import { Flame, LaptopMinimal, MonitorSmartphone } from "lucide-react";
 import { Grid, GridItem } from "@chakra-ui/react";
 
 const categories = [
@@ -108,9 +108,12 @@ export default function Home() {
       <Container maxW="container.xl" py={6} as="main" minH="10vh">
         <section className="py-12">
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <LaptopMinimal style={{ width: "50px", height: "50px", color: "#04031b" }} />
+            <MonitorSmartphone
+              className="text-brand-500"
+              style={{ width: "40px", height: "40px" }}
+            />
           </div>
-          <Heading as="h2" mb={6} textAlign="center" color="brand.900">
+          <Heading as="h2" mb={6} mt={2} fontWeight={600} textAlign="center" color="brand.900">
             Categories
           </Heading>
           <Grid templateColumns="repeat(5, 1fr)" gap={6}>
@@ -125,14 +128,14 @@ export default function Home() {
             ))}
           </Grid>
         </section>
-        <section id="popular-releases" className="py-12">
+        {/* <section id="popular-releases" className="py-12">
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Flame style={{ width: "50px", height: "50px", color: "#04031b" }} />
           </div>
           <Heading as="h2" mb={6} textAlign="center" color="brand.900">
             Popular releases
           </Heading>
-        </section>
+        </section> */}
       </Container>
     </Layout>
   );

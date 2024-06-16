@@ -8,11 +8,19 @@ import Sticky from "react-sticky-el";
 import {
   Checkbox,
   Input,
+  Popover,
+  PopoverArrow,
+  PopoverBody,
+  PopoverCloseButton,
+  PopoverContent,
+  PopoverHeader,
+  PopoverTrigger,
   RangeSlider,
   RangeSliderFilledTrack,
   RangeSliderThumb,
   RangeSliderTrack
 } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 
 type FiltersFormData = {
   sortBy: string;
@@ -38,11 +46,55 @@ const sortByOptions: FilterOption[] = [
   { value: "user-rating", label: "User Rating" }
 ];
 
-const SpecDropdown = ({ name }: { name: string }) => {
+const SpecDropdown = ({ name, description }: { name: string; description?: string }) => {
   return (
-    <div className="flex cursor-pointer items-center rounded-lg border border-transparent px-2 py-2 hover:border-gray-200">
-      <ChevronLeft className="text-brand-400 mr-2 h-4 w-4" />
-      <p className="text-base font-medium">{name}</p>
+    <div className="flex cursor-pointer items-center justify-between rounded-lg border border-transparent px-2 py-2 hover:border-gray-200">
+      <div className="flex items-center space-x-1">
+        <ChevronLeft className="text-brand-400 mr-2 h-4 w-4" />
+        <p className="text-base font-medium">{name}</p>
+      </div>
+
+      <div>
+        {/* <Tooltip
+          label={
+            <>
+              {description}
+              <Link href="/guide" className="text-brand-500 mt-2 block font-semibold underline">
+                Learn more
+              </Link>
+            </>
+          }
+          placement="right"
+          hasArrow
+          pointerEvents={"all"}
+        >
+          <div className="flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 text-[12px] text-white">
+            ?
+          </div>
+        </Tooltip> */}
+
+        <Popover placement="right-start">
+          <PopoverTrigger>
+            <div className="flex h-4 w-4 items-center justify-center rounded-full bg-gray-300 text-[12px] text-white">
+              ?
+            </div>
+          </PopoverTrigger>
+          <PopoverContent>
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverHeader>{name}</PopoverHeader>
+            <PopoverBody>
+              {description}
+              <Link
+                href={`/glossary/${name}`}
+                className="text-brand-500 mt-2 block font-semibold underline"
+              >
+                Learn more
+              </Link>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+      </div>
     </div>
   );
 };
@@ -163,7 +215,10 @@ export const FiltersCard = () => {
           <hr />
           <div className="space-y-2 py-4">
             <p className="font-poppins mb-2 text-base font-semibold">Performance</p>
-            <SpecDropdown name="RAM" />
+            <SpecDropdown
+              name="RAM"
+              description="Random-access memory (RAM) is a form of memory used to store working data and machine code. Having more RAM is particularly useful for multitasking, allowing you to run more programs at once or have more tabs open in your browser."
+            />
             <SpecDropdown name="Processor model" />
             <SpecDropdown name="Processor speed" />
             <SpecDropdown name="Storage" />

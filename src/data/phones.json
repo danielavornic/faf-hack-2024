@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "SmartPhone Alpha",
+    "avgPrice": 299.99,
+    "score": 45,
+    "imageUrl": "https://m.media-amazon.com/images/I/61eEYLATF9L._AC_UF1000,1000_QL80_.jpg",
+    "expertsFeedback": "Excellent performance with minor battery issues.",
+    "overview": [
+      {
+        "value": 6.1,
+        "other": "OLED",
+        "unit": "inch",
+        "title": "Screen Size",
+        "description": "Provides crisp and vivid colors with ample size."
+      },
+      {
+        "value": "8GB",
+        "other": 256,
+        "unit": "GB",
+        "title": "Memory and Storage",
+        "description": "Sufficient RAM and storage for everyday tasks."
+      }
+    ],
+    "display": [
+      {
+        "name": "Resolution",
+        "value": "2400x1080",
+        "description": "High resolution provides sharp image quality."
+      },
+      {
+        "name": "Refresh Rate",
+        "value": 120,
+        "description": "Smooth visuals and fast screen response time."
+      }
+    ],
+    "performance": [
+      {
+        "name": "Processor",
+        "value": "SnapDragon 865",
+        "description": "Top of the line processor for maximum efficiency."
+      },
+      {
+        "name": "Battery",
+        "value": "4500 mAh",
+        "description": "Lasts a full day on a single charge under typical use."
+      }
+    ],
+    "camera": [
+      {
+        "name": "Main Camera",
+        "value": "108 MP",
+        "description": "High resolution for stunning photography."
+      },
+      {
+        "name": "Front Camera",
+        "value": "32 MP",
+        "description": "High-quality selfies and video calls."
+      }
+    ],
+    "priceTags": [
+      {
+        "name": "Official Store",
+        "url": "https://example.com/store-alpha",
+        "merchant": "Alpha Electronics"
+      },
+      {
+        "name": "Tech Retailer",
+        "url": "https://techretailer.com/alpha",
+        "merchant": "Tech Retailer Inc."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "SmartPhone Beta",
+    "avgPrice": 499.99,
+    "score": 60,
+    "imageUrl": "https://m.media-amazon.com/images/I/61eEYLATF9L._AC_UF1000,1000_QL80_.jpg",
+    "expertsFeedback": "Superior camera performance but at a higher price point.",
+    "overview": [
+      {
+        "value": 6.7,
+        "other": "AMOLED",
+        "unit": "inch",
+        "title": "Screen Size",
+        "description": "Large and immersive display for an enhanced viewing experience."
+      },
+      {
+        "value": "12GB",
+        "other": 512,
+        "unit": "GB",
+        "title": "Memory and Storage",
+        "description": "Ample RAM and massive storage for heavy users."
+      }
+    ],
+    "display": [
+      {
+        "name": "Resolution",
+        "value": "3200x1440",
+        "description": "Ultra-high resolution for extremely detailed visuals."
+      },
+      {
+        "name": "Refresh Rate",
+        "value": 144,
+        "description": "Ultra smooth display ideal for gaming and high-speed scrolling."
+      }
+    ],
+    "performance": [
+      {
+        "name": "Processor",
+        "value": "SnapDragon 888+",
+        "description": "Latest and fastest processor for ultimate performance."
+      },
+      {
+        "name": "Battery",
+        "value": "5000 mAh",
+        "description": "Extended battery life for power users."
+      }
+    ],
+    "camera": [
+      {
+        "name": "Main Camera",
+        "value": "120 MP",
+        "description": "Exceptionally high-resolution camera for professional-quality photos."
+      },
+      {
+        "name": "Front Camera",
+        "value": "40 MP",
+        "description": "Superb resolution for crystal clear selfies."
+      }
+    ],
+    "priceTags": [
+      {
+        "name": "Premium Outlet",
+        "url": "https://premiumoutlet.com/beta",
+        "merchant": "Premium Outlet Electronics"
+      },
+      {
+        "name": "Online MegaStore",
+        "url": "https://onlinemegastore.com/beta",
+        "merchant": "Online MegaStore Inc."
+      }
+    ]
+  }
+]

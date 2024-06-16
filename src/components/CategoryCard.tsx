@@ -25,7 +25,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, image, category }) =
         _hover={{ borderColor: "brand.500" }}
       >
         <div className="relative">
-          <div className="absolute z-[1] h-full w-full bg-brand-400 opacity-20 transition-opacity duration-300"></div>
+          <div className="bg-brand-600 absolute z-[1] h-full w-full opacity-40 transition-opacity duration-300"></div>
           <Image w="full" h={52} fit="cover" src={image} alt={title} />
         </div>
         <Box py={4} textAlign="center">

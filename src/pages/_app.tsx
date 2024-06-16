@@ -6,6 +6,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@fontsource/merriweather";
 import "@fontsource-variable/roboto-slab";
 import "@fontsource/poppins";
+import { useRef } from "react";
+import { AppStore, makeStore } from "@/lib/store";
+import { Provider } from "react-redux";
 
 const queryClient = new QueryClient();
 
@@ -31,11 +34,19 @@ const theme = extendTheme({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  const storeRef = useRef<AppStore>();
+
+  if (!storeRef.current) {
+    storeRef.current = makeStore();
+  }
+
   return (
-    <ChakraProvider theme={theme}>
-      <QueryClientProvider client={queryClient}>
-        <Component {...pageProps} />
-      </QueryClientProvider>
-    </ChakraProvider>
+    <Provider store={storeRef.current}>
+      <ChakraProvider theme={theme}>
+        <QueryClientProvider client={queryClient}>
+          <Component {...pageProps} />
+        </QueryClientProvider>
+      </ChakraProvider>
+    </Provider>
   );
 }
