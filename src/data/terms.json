@@ -125,6 +125,12 @@
       "explanation": "Contrast ratio measures the difference between the brightest and darkest parts of an image displayed on a screen, indicating the image's clarity and depth."
     }
   ],
+  "Processor Speed": [
+    {
+      "image": "https://cdn.mos.cms.futurecdn.net/VGCcWL5iYNoceZNq5PBwfk.jpg",
+      "explanation": "Processor speed refers to the clock rate at which a processor executes instructions per second, determining the performance and speed of a device. Processor speed is measured in hertz (Hz) and refers to the number of cycles per second that a CPU can execute. Modern processors typically have speeds in the range of 1 GHz (gigahertz) to 3.8 GHz, with higher end models being capable of even greater speeds."
+    }
+  ],
   "CPU speed": [
     {
       "image": "https://example.com/cpu_speed.jpg",

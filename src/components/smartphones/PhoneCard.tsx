@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text, Tooltip } from "@chakra-ui/react";
 import { Phone } from "@/types";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -19,24 +19,26 @@ const PhoneCard = ({ phone }: { phone: Phone }) => {
 
   return (
     <Link href={`/smartphones/${id}`} className="relative flex w-full">
-      <div className="absolute left-4 top-[10px] z-10 h-12 w-12" style={{ marginTop: "10px" }}>
-        <CircularProgressbar
-          value={score}
-          text={`${score}%`}
-          background
-          strokeWidth={8}
-          className="score-circle"
-          classes={{
-            root: "align-middle",
-            text: clsx(
-              "text-[24px] fill-brand-700 font-bold l-1 text-anchor-middle dominant-baseline-middle"
-            ),
-            background: clsx("fill-brand-100"),
-            trail: "bg-transparent",
-            path: clsx("stroke-brand-700")
-          }}
-        />
-      </div>
+      <Tooltip label="TechAdvisor score - overall performance on a scale of 1 to 100">
+        <div className="absolute left-4 top-[10px] z-[1] h-12 w-12" style={{ marginTop: "10px" }}>
+          <CircularProgressbar
+            value={score}
+            text={`${score > 100 ? 100 : score}%`}
+            background
+            strokeWidth={8}
+            className="score-circle"
+            classes={{
+              root: "align-middle",
+              text: clsx(
+                "text-[24px] fill-brand-700 font-bold l-1 text-anchor-middle dominant-baseline-middle"
+              ),
+              background: clsx("fill-brand-100"),
+              trail: "bg-transparent",
+              path: clsx("stroke-brand-700")
+            }}
+          />
+        </div>
+      </Tooltip>
       <Box
         // bg="#edf3f8"
         _dark={{
@@ -56,7 +58,7 @@ const PhoneCard = ({ phone }: { phone: Phone }) => {
         className="border border-gray-200 bg-white"
       >
         <div
-          className="bg-phone mb-4 h-[250px] w-full bg-contain bg-center bg-no-repeat"
+          className="mb-4 h-[250px] w-full bg-phone bg-contain bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${imageUrl})` }}
         ></div>
 
@@ -66,12 +68,15 @@ const PhoneCard = ({ phone }: { phone: Phone }) => {
               {name}
             </Text>
 
-            <Text color="brand.700" fontStyle="italic" width="70px">
+            <Text color="brand.700" fontStyle="italic" width="70px" className="text-nowrap">
               ${avgPrice.toFixed(2)}
             </Text>
           </div>
           <Button
-            className="bg-brand-500 !h-10 !w-10 !text-white"
+            className={clsx("!h-10 !w-10", {
+              "border border-brand-500 bg-transparent !text-brand-500": !isInComparison,
+              "bg-brand-500 !text-white": isInComparison
+            })}
             variant="ghost"
             size="sm"
             _hover={{ color: "brand.400" }}

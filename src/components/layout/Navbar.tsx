@@ -46,7 +46,7 @@ export const Navbar = () => {
           >
             <Cpu size={28} className="mr-2" />
             <Heading as="h1" size="md" fontWeight={700}>
-              App name
+              TechAdvisor
             </Heading>
           </Link>
           <InputGroup maxW="300px" ml="80px">
@@ -69,10 +69,10 @@ export const Navbar = () => {
             variant="ghost"
             color="white"
             size="sm"
-            onClick={() => router.push("/categories")}
+            onClick={() => router.push("/smartphones")}
             _hover={{ color: "brand.200" }}
           >
-            Categories
+            Smartphones
           </Button>
           <Button
             variant="ghost"

@@ -6,6 +6,8 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
 import questions from "@/data/questions.json";
+import { useQuery } from "@tanstack/react-query";
+import { axios } from "@/lib/axios";
 
 type SurveyFormData = {
   deviceType: string[]; // Single selection: computer, smartphone, tablet, audio, camera
@@ -43,12 +45,13 @@ const survey = () => {
   const step = router.query.step;
 
   const { control, register, handleSubmit, watch } = useForm<SurveyFormData>();
+  const [prompt, setPrompt] = React.useState<string>("");
 
   const onSubmit = (data: SurveyFormData) => {
     const formattedString = generateSurveySummary(questions, data);
-    alert(formattedString);
+    setPrompt(formattedString);
 
-    router.push("/smartphones");
+    router.push(`/smartphones?prompt=${formattedString}`);
   };
 
   const handleNext = () => {

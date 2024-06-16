@@ -19,6 +19,7 @@ export interface Phone {
     name: string;
     url: string;
     merchant: string;
+    price: number;
   }[];
 }
 

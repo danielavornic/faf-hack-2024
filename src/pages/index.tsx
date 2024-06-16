@@ -40,7 +40,7 @@ export default function Home() {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data: any) => {
-    router.push(`/search?q=${data.search}`);
+    router.push(`/smartphones?prompt=${data.search}`);
   };
 
   return (
@@ -53,25 +53,24 @@ export default function Home() {
           <TypeAnimation
             preRenderFirstString={true}
             sequence={[
-              "We produce food for Mice",
+              "Best picks for a new phone",
               1000,
-              "We produce food for Hamsters",
+              "Best picks for a new laptop",
               1000,
-              "We produce food for Guinea Pigs",
+              "Best picks for a new computer",
               1000,
-              "We produce food for Chinchillas",
+              "Best picks for a new camera",
               1000
             ]}
-            speed={50}
+            speed={30}
             repeat={Infinity}
           />
         </Heading>
         <img src="/images/hero-phone.png" alt="hero" className="mb-16 w-1/3 opacity-50" />
         <Text color="white" textAlign="center" fontSize="2xl" className="w-1/3 opacity-90">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-          ut labore et dolore.
+          Use any search prompt or take our survey to get personalized recommendations.
         </Text>
-        <div className="mt-12 flex w-full max-w-screen-md items-center justify-center gap-4">
+        <div className="mt-20 flex w-full max-w-screen-md items-center justify-center gap-4">
           <div className="flex justify-center">
             <form onSubmit={handleSubmit(onSubmit)}>
               <Input
@@ -81,7 +80,7 @@ export default function Home() {
                 borderRadius={8}
                 color="white"
                 className="!min-w-[400px] !rounded-[12px] !px-6 focus:border-gray-600 focus:outline-none focus:ring-0"
-                placeholder="Search by any criteria"
+                placeholder="Enter search prompt..."
                 {...register("search")}
               />
             </form>
@@ -100,7 +99,7 @@ export default function Home() {
               px="16"
               className="!rounded-[12px] uppercase"
             >
-              Take guide
+              Take survey
             </Button>
           </Link>
         </div>
